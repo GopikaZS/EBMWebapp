@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <link href="style.css" rel="stylesheet" type="text/css" />
+<title>Insert title here</title>
+</head>
+<body>
+
+<div>
+    <header class="ebHeader">
+
+    </header>
+    <div id="ebBody">
+            <div class="sideMenuBar">
+					 <p onclick="viewAllCustomers();">Customers</p>
+					
+		             <!--  <p>Assign to user</p> -->
+		              <p onclick="userNewRequest()">New User Request</p>
+		               <p onclick="viewProfile()">Profile</p>
+		              <p>Complaints</p>
+		              <p onclick="logout()">Logout</p>
+            </div>
+          <div id="displayRequest">
+          
+          </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="adminAction.js"></script>
+<script >
+viewAllCustomers();
+</script>
+</body>
+</html>

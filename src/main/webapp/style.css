@@ -1,0 +1,492 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+    /*font-family: 'Noto Sans TC', sans-serif;*/
+    font-family: regular;
+    /* border:1px solid red; */
+}
+
+@font-face {
+	font-family: regular;
+	src : url(Fonts/Zoho\ Puvi\ Regular.ttf);
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+#ebmLogo{
+    width: 100px;
+    height: 80px;
+    background-image: url(images/EBMlogo.png);
+    background-size: 100% 100%;
+    
+}
+
+.homeContainer {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+    font-size: 1.5rem;
+}
+
+.homeHeaderMenu p {
+    cursor: pointer;
+}
+
+p {
+    font-size: 1.3rem;
+    padding: 2px;
+}
+
+.homeHeader {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F0F1F7;
+}
+
+.homeHeaderMenu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.loginText {
+    border: 1px solid #0C1442;
+    padding: 13px 20px;
+    background-color: #0C1442;
+    color: white;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+
+/*  Login page */
+.loginContainer {
+    display: none;
+    width:100vw;
+    height: 100vh;
+    background-color:whitesmoke; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginContainer h2 {
+    margin-bottom: 20px;
+}
+
+.loginInputContainer{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: red;
+
+}
+
+.loginInputContainer label{
+    font-size: 1.3rem;
+}
+.loginLayout{
+    width: 450px;
+    padding: 50px;
+    border-radius: 8px;
+    background-color: #ffffffdf;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border:1px solid blue;
+}
+.loginForm input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+	display: flex;
+	align-items:center;
+	justify-content: center;
+    font-size: 1.2rem;
+    background-color:#0C1442;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ 
+.loginNewUser{
+	font-size: 1.04rem;
+	padding-top: 15px;
+} 
+
+/*  New User Form*/
+.newUserInputForm {
+    display: none;
+    width: 75vw;
+    height: 89vh;
+    margin: auto;
+}
+
+.newUserInputContainer {
+    width: 500px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newUserInputContainer input {
+    width: 300px;
+    height: 35px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.newUserInputContainer1 input{
+     width: 30px;
+}
+.userForm {
+    width: 800px;
+    height: 810px;
+    margin: 30px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F1F7;
+    border-radius: 15px;
+}
+
+.userForm h2 {
+    font-size: 2.3rem;
+}
+
+.newUserText {
+    font-size: 1.3rem;
+}
+
+#cityName,
+#stateName {
+    width: 300px;
+    height: 35px;
+    padding: 0px 10px;
+    font-size: 1.1rem;
+}
+
+#addNewUserForm{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#userSubmit{
+    width: 200px;
+    margin-left: 300px;
+}
+
+
+
+/*  Admin Page*/
+
+.ebHeader{
+    width:100vw;
+    height: 80px;
+    background-color: #F0F1F7;
+    border: 1px solid black;
+}
+
+#ebBody{
+    height: 91vh;
+    display: flex;
+    border: 1px solid black;
+}
+
+.sideMenuBar{
+	background-color:#F0F1F7;
+    height: 100%;
+    width: 15vw;
+}
+
+
+
+/*user Page  */
+
+#displayRequest{
+	width:100vw;
+	margin: 20px auto;
+	overflow: auto;
+}
+
+
+
+/*  Profile Page */
+
+.profileDisplayContainer{
+	width:80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.profileImage{
+    width:300px;
+    height: 250px;
+    margin: 20px auto;
+    background-image: url('images/userImage1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 75%;
+}
+
+.profileContainerText{
+    display: flex;
+    font-size: 1.3rem;
+    width:350px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+.profileContainerText p {
+  width:200px;	
+}
+
+ul li {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+
+/*  bill layout*/
+
+ .container {
+            width: 45vw;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+ .bill {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+}
+.bill-header {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+ }
+.bill-header h2 {
+            margin: 0;
+            color: #333;
+ }
+.bill-details {
+            margin-bottom: 10px;
+ }
+ .bill-details p {
+            padding-top: 10px;
+            margin: 5px 0;
+}
+.payButton {
+            margin-right: 20px;
+            text-align: right;
+            font-weight: bold;
+}
+
+/* All user display */
+
+.allConstomerTable{
+			width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto ;
+}
+
+.allConstomerTable th, .allConstomerTable td {
+            text-align: center;
+            padding: 8px;
+  }
+  
+  /*  reference check the new user status*/
+  
+  .referenceBody {
+    display: none;
+    align-items: center;
+    height: 80vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+} 
+.referenceContainer {
+    background-color: #F0F1F7;
+    border-radius: 8px;
+    padding: 50px 40px 10px 40px;
+    width: 500px;
+}
+
+.referenceContainer *{
+	margin-bottom: 25px;
+}
+
+.referenceText {
+    margin-bottom: 15px;
+}
+.referenceText label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.referenceText input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    height:40px;
+    border: 1px solid #ccc;
+}
+/* .referenceCheckUser {
+    padding: 10px 20px;
+    border-radius: 4px;
+} */
+
+/*  user request view */
+.userReferenceViewTable{
+	 border-collapse: collapse;
+}
+
+.userReferenceViewTable *{
+  border:1px solid black;	
+}
+
+.userReferenceViewTable th,.userReferenceViewTable td{
+	padding :20px;
+	width:250px;
+	font-size: 1.2rem;
+	
+}
+
+/* new user Request */
+
+.requestContainer {
+    background-color: #F0F1F7;
+    width: 55vw;
+    height: 450px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius:15px;
+    align-items: center;
+}
+
+.newRequestImges{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newRequestImges h3{
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+}
+
+.viewTextLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.newUserRequestContainer {
+    width: 400px;
+    height: auto;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: max-content;
+}
+
+
+.newUserRequestContainer p {
+    width: 250px;
+    height: auto;
+    /* border: 1px solid; */
+    display: inline;
+    padding: 10px 5px;
+}
+/* 
+.newdiv {
+    width: 400px;
+    height: auto;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+} */
+
+/* .viewTextLayout h3 {
+    font-size: 1.5rem;
+} */
+
+.userImage {
+    width: 270px;
+    height: 200px;
+    background-image: url(images/userImage1.png);
+    background-size: 100% 100%;
+}
+
+#addressViewBox {
+   
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+
+#addressViewBox li{
+    width: 300px; 
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.userButtonContainer{
+    width:400px;
+    height:80px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid black; */
+}
+
+.userButtonContainer button{
+    width:100px;
+    margin-left: 50px;
+}
+
+
+/* User Bill History */
+ #useBillHistoryContainer table {
+        width: 93%;
+        margin:auto;
+        border-collapse: collapse;
+    }
+  #useBillHistoryContainer th, #useBillHistoryContainer td {
+        text-align: left;
+        padding: 15px 10px;
+        border-bottom: 1px solid black;
+    }
+  #useBillHistoryContainer  th {
+       background-color: #F0F1F7;
+         text-align: center;
+    }
+
